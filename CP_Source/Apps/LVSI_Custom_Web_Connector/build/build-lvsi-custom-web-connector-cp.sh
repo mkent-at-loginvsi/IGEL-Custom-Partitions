@@ -22,7 +22,7 @@ do
   dpkg -x "${LINE}" custom/lvsi-custom-web-connector
 done
 
-wget https://github.com/mkent-at-loginvsi/IGEL-Custom-Partitions/raw/main/CP_Packages/Apps/LVSI_Custom_Web_Connector.zip
+wget https://github.com/mkent-at-loginvsi/IGEL-Custom-Partitions/raw/main/CP_Packages/Apps/LVSI_Custom_Web_Connector/LVSI_Custom_Web_Connector.zip
 
 unzip LVSI_Custom_Web_Connector.zip -d custom
 mv custom/target/build/lvsi-custom-web-connector-cp-init-script.sh custom
