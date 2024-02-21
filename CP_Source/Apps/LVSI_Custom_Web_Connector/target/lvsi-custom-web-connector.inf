@@ -1,0 +1,7 @@
+[INFO]
+[PART]
+file="lvsi-custom-web-connector.tar.bz2"
+version="1.0.0"
+size="500M"
+name="lvsi-custom-web-connector"
+minfw="11.09.110"
