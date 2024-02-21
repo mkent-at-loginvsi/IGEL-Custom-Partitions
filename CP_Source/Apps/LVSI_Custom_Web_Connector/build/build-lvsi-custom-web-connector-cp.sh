@@ -24,20 +24,20 @@ done
 
 wget https://github.com/mkent-at-loginvsi/IGEL-Custom-Partitions/raw/main/CP_Packages/Apps/LVSI_Custom_Web_Connector.zip
 
-unzip Expect.zip -d custom
+unzip LVSI_Custom_Web_Connector.zip -d custom
 mv custom/target/build/lvsi-custom-web-connector-cp-init-script.sh custom
 
 cd custom
 
 # edit inf file for version number
-mkdir getversion
-cd getversion
-ar -x ../../expect_*amd64.deb
-tar xf control.tar.* ./control
-VERSION=$(grep Version control | cut -d " " -f 2)
+#mkdir getversion
+#cd getversion
+
+#tar xf control.tar.* ./control
+#VERSION=$(grep Version control | cut -d " " -f 2)
 #echo "Version is: " ${VERSION}
-cd ..
-sed -i "/^version=/c version=\"${VERSION}\"" target/lvsi-custom-web-connector.inf
+#cd ..
+#sed -i "/^version=/c version=\"${VERSION}\"" target/lvsi-custom-web-connector.inf
 
 
 # new build process into zip file
