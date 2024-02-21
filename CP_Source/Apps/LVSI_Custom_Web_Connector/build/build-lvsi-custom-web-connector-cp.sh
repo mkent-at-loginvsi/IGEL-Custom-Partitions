@@ -7,6 +7,16 @@
 
 sudo apt install unzip -y
 
+if [ "$EUID" -ne 0 ]
+  then wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | sudo bash
+else
+  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 mkdir build_tar
 cd build_tar
 
@@ -25,7 +35,7 @@ done
 wget https://github.com/mkent-at-loginvsi/IGEL-Custom-Partitions/raw/main/CP_Packages/Apps/LVSI_Custom_Web_Connector/LVSI_Custom_Web_Connector.zip
 
 unzip LVSI_Custom_Web_Connector.zip -d custom
-mv custom/target/build/lvsi-custom-web-connector-cp-init-script.sh custom
+mv custom/build/lvsi-custom-web-connector-cp-init-script.sh custom
 
 cd custom
 
