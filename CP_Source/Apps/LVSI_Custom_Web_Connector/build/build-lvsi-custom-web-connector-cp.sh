@@ -41,7 +41,7 @@ sed -i "/^version=/c version=\"${VERSION}\"" target/lvsi-custom-web-connector.in
 
 
 # new build process into zip file
-tar cvjf target/lvsi-custom-web-connector.tar.bz2 expect lvsi-custom-web-connector-cp-init-script.sh
+tar cvjf target/lvsi-custom-web-connector.tar.bz2 lvsi-custom-web-connector lvsi-custom-web-connector-cp-init-script.sh
 zip -g ../LVSI_Custom_Web_Connector.zip target/lvsi-custom-web-connector.tar.bz2 target/lvsi-custom-web-connector.inf
 zip -d ../LVSI_Custom_Web_Connector.zip "target/build/*" "target/igel/*" "target/target/*"
 mv ../LVSI_Custom_Web_Connector.zip ../../LVSI_Custom_Web_Connector-${VERSION}_igel01.zip
