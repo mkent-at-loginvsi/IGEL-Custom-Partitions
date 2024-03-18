@@ -1,7 +1,7 @@
 name: 'Build Package(s)'
 
 on:
-  pull_request:
+  workflow_dispatch:
     branches:
       - master
 jobs:
