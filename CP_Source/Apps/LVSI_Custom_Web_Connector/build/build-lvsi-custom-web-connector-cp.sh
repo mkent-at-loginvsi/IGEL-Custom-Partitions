@@ -59,4 +59,5 @@ zip -d ../LVSI_Custom_Web_Connector.zip "target/build/*" "target/igel/*" "target
 mv ../LVSI_Custom_Web_Connector.zip ../../LVSI_Custom_Web_Connector_igelOS.zip
 
 cd ../..
+echo PWD IS $(pwd)ß
 rm -rf build_tar
