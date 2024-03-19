@@ -14,7 +14,7 @@ jobs:
           run: ls -la ${GITHUB_WORKSPACE}
 
         - name: Build CP_Package
-          run: bash ${GITHUB_WORKSPACE}/CP_Source/CP_Packages/Apps/LVSI_Custom_Web_Connector/build/build-lvsi-custom-web-connector-cp.sh
+          run: bash ${GITHUB_WORKSPACE}/CP_Source/Apps/LVSI_Custom_Web_Connector/build/build-lvsi-custom-web-connector-cp.sh
 
         - name: Upload CP_Package_Build
           uses: actions/upload-artifact@v3
