@@ -39,7 +39,7 @@ mv custom/target/build/lvsi-custom-web-connector-cp-init-script.sh custom
 
 cd custom
 
-echo PWD IS $(pwd)
+echo PWD INSIDE $(pwd)
 
 # edit inf file for version number
 #mkdir getversion
@@ -59,5 +59,5 @@ zip -d ../LVSI_Custom_Web_Connector.zip "target/build/*" "target/igel/*" "target
 mv ../LVSI_Custom_Web_Connector.zip ../../LVSI_Custom_Web_Connector_igelOS.zip
 
 cd ../..
-echo PWD IS $(pwd)ß
+echo PWD OUTSIDE $(pwd)
 rm -rf build_tar
