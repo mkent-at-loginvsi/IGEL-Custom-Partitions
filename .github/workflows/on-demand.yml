@@ -11,5 +11,5 @@ jobs:
           uses: actions/checkout@v4
 
         - name: Build CP_Package
-          run: CP_Solution/CP_Packages/Apps/LVSI_Custom_Web_Connector/build/build-lvsi-custom-web-connector-cp.sh
+          run: CP_Source/CP_Packages/Apps/LVSI_Custom_Web_Connector/build/build-lvsi-custom-web-connector-cp.sh
 
