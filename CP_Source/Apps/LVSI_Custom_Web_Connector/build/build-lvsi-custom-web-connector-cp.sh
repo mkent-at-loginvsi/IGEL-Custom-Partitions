@@ -57,4 +57,4 @@ zip -d ../LVSI_Custom_Web_Connector.zip "target/build/*" "target/igel/*" "target
 mv ../LVSI_Custom_Web_Connector.zip ../../LVSI_Custom_Web_Connector_igel01.zip
 
 cd ../..
-#rm -rf build_tar
+rm -rf build_tar
