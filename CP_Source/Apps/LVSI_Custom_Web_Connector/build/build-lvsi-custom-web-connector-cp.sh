@@ -39,6 +39,8 @@ mv custom/target/build/lvsi-custom-web-connector-cp-init-script.sh custom
 
 cd custom
 
+echo PWD IS $(pwd)
+
 # edit inf file for version number
 #mkdir getversion
 #cd getversion
